@@ -438,9 +438,10 @@ Answer the **4 technical questions** in the provided template:
 Create a **2-3 minute video** (not shorter, not longer) showing:
 
 1. **Introduction (30 seconds)**:
-   - State your name and student ID
-   - Show your GitHub repository homepage
-   - Verify repository is public and uses university email
+   - State your name and student ID  OSAMA ABDULWAHAB  445050050
+   - Show your GitHub repository homepage asamh8031-bit
+
+   - Verify repository is public and uses university email 45050050@STD.EU.SA
 
 2. **Code Walkthrough (1 minute)**:
    - Navigate through your repository files
