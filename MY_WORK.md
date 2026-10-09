@@ -231,7 +231,7 @@
 >
 > 💡 **TIP:** Draft your answer in a few bullet points first, then turn them into sentences.
 
-## Question 1: What did you learn about multithreading?
+## Question 1: What did you learn about multithreading?  I learned that a Java thread can execute a task by using a class that implements Runnable. In this assignment, the simulated Process objects are passed to Java threads, and Thread.start() begins their execution. I also learned that Thread.sleep() pauses the executing thread temporarily to simulate CPU work. The scheduler uses Thread.join() to wait until the selected thread finishes its current time slice. One important thing I learned is that the Process class in this program represents a simulated process, while the Java Thread is the actual execution mechanism. This helped me understand how threads, scheduling, and time quantum work together in the simulation.
 
 > 💡 **TIP:** Talk about thread creation (`Runnable`, `Thread.start()`), waiting with `Thread.join()`, simulating work with `Thread.sleep()`, and what surprised you.
 
@@ -239,7 +239,7 @@
 
 [Write your answer here.]
 
-## Question 2: What was the most challenging part of this assignment?
+## Question 2: What was the most challenging part of this assignment? The most challenging part of this assignment was understanding how waiting time should be tracked. A process may wait in the ready queue more than once because it may not finish during its first time quantum. I needed to distinguish the time a process spends waiting from the time it spends executing. I also had to understand where the program should record the time when a process enters the queue and when the scheduler selects it. This was important because an incorrect timing point could produce an inaccurate waiting time.
 
 > 💡 **TIP:** Pick **one** specific challenge (understanding the code, one of the features, Git, the video) and say *why* it was hard.
 
@@ -247,7 +247,7 @@
 
 [Write your answer here.]
 
-## Question 3: How did you overcome the challenges you faced?
+## Question 3: How did you overcome the challenges you faced?  I approached the assignment by reading the code and following the scheduler loop step by step. I examined how addProcessToQueue() creates a thread and adds it to the ready queue. I then reviewed where the selected thread starts and where the scheduler waits for it to finish. I tested the program after making small changes so that I could identify problems before moving to the next feature
 
 > 💡 **TIP:** Describe your method: reading documentation, adding `System.out.println` to debug, re-reading the README, testing after each small change, asking for help.
 
@@ -255,7 +255,7 @@
 
 [Write your answer here.]
 
-## Question 4: How can you apply multithreading concepts in real-world applications?
+## Question 4: How can you apply multithreading concepts in real-world applications? Multithreading is useful in applications that need to perform several tasks without making the entire application unresponsive. For example, a web browser can use separate threads for background work while keeping its interface responsive. A media player can handle playback and user-interface tasks separately so that the controls remain usable. The ready queue in my simulation represents tasks waiting for an opportunity to execute,
 
 > 💡 **TIP:** Use real applications you know (web browser, game, mobile app, music player) and connect each one to what you built here.
 
@@ -263,7 +263,7 @@
 
 [Write your answer here.]
 
-### Optional: What would you like to learn more about?
+### Optional: What would you like to learn more about? 
 
 [Any topics related to threading or operating systems that you're curious about?]
 
